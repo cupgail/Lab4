@@ -1,0 +1,12 @@
+stroke = input()
+word = str()
+counter = 0
+
+for i in range(len(stroke)):
+    if stroke[i].isalpha(): 
+        word += stroke[i]
+    else:
+        if len(word) > 1:
+            counter += 1
+        word = ""
+print(counter)

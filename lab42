@@ -1,0 +1,9 @@
+word = str(input( ))
+count = len(word)
+
+num = 0
+
+for i in range(1, count + 1):
+    letter = word[num]
+    print(str(num) + ' ' + letter)
+    num += 1

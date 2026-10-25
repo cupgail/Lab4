@@ -1,0 +1,8 @@
+word = str(input( ))
+i_word = str(input())
+
+if i_word in word:
+    index = word.index(i_word) + 1
+    print(index)
+else:
+    print("0")

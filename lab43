@@ -1,0 +1,6 @@
+stroke = str(input())
+num = int(input())
+
+caps = stroke[:num]
+
+print(caps.upper() + stroke[num:])

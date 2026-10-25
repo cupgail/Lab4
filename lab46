@@ -1,0 +1,16 @@
+stroke = input()
+word = str()
+list = list()
+
+for i in range(len(stroke)):
+    if stroke[i].isalpha(): 
+        word += stroke[i]
+    else:
+        if word:
+            list.append(word)
+            list.sort(key = len)
+        word = ""
+
+size = str(len(list[0]))
+word = list[0]
+print(word + " " + size)
